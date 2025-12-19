@@ -46,7 +46,7 @@ pnpm dev
 
 ## Testing
 
-If you'd like to include a Postman collection, export it from Postman and add it to this repo (for example `docs/postman_collection.json`). Meanwhile, here are working `curl` commands you can run locally. Make sure the server is running (default: `http://localhost:3000`).
+Find the postman collection (`docs/postman_collection.json`). Meanwhile, here are working `curl` commands you can run locally. Make sure the server is running (default: `http://localhost:3000`).
 
 ```bash
 # Get user by ID
