@@ -46,16 +46,20 @@ pnpm dev
 
 ## Testing
 
-not sure how can I give me post man collection here so 
-here are the curl commands 
+If you'd like to include a Postman collection, export it from Postman and add it to this repo (for example `docs/postman_collection.json`). Meanwhile, here are working `curl` commands you can run locally. Make sure the server is running (default: `http://localhost:3000`).
 
--Get user by ID
---curl http://localhost:3000/users/1
--Create new user
---curl -X POST http://localhost:3000/users \
---  -H "Content-Type: application/json" \
---  -d '{"name":"Bob Wilson","email":"bob@example.com"}'
--Check cache status
---curl http://localhost:3000/users/cache/status
--Clear cache
---curl -X DELETE http://localhost:3000/users/cache
+```bash
+# Get user by ID
+curl http://localhost:3000/users/1
+
+# Create new user
+curl -X POST http://localhost:3000/users \
+	-H "Content-Type: application/json" \
+	-d '{"name":"Bob Wilson","email":"bob@example.com"}'
+
+# Check cache status
+curl http://localhost:3000/users/cache/status
+
+# Clear cache
+curl -X DELETE http://localhost:3000/users/cache
+```
