@@ -49,13 +49,13 @@ pnpm dev
 not sure how can I give me post man collection here so 
 here are the curl commands 
 
-Get user by ID
-curl http://localhost:3000/users/1
-Create new user
-curl -X POST http://localhost:3000/users \
-  -H "Content-Type: application/json" \
-  -d '{"name":"Bob Wilson","email":"bob@example.com"}'
-Check cache status
-curl http://localhost:3000/users/cache/status
-Clear cache
-curl -X DELETE http://localhost:3000/users/cache
+-Get user by ID
+--curl http://localhost:3000/users/1
+-Create new user
+--curl -X POST http://localhost:3000/users \
+--  -H "Content-Type: application/json" \
+--  -d '{"name":"Bob Wilson","email":"bob@example.com"}'
+-Check cache status
+--curl http://localhost:3000/users/cache/status
+-Clear cache
+--curl -X DELETE http://localhost:3000/users/cache
